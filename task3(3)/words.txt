@@ -1,0 +1,2 @@
+bird cat dog elephant fish horse kangaroo
+ monkey mouse parrot rabbit snake turtle
