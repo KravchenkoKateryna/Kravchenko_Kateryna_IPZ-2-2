@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #646547;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #646547;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e3f23;
+        }
+
+        .note {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .note h2 {
+            margin-top: 0;
+        }
+
+        .note p {
+            margin-bottom: 0;
+        }
+
+        .note button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Notes App</h1>
+</header>
+<main>
+    <form id="noteForm">
+        <input type="text" id="noteTitle" placeholder="Note Title" required>
+        <textarea id="noteContent" placeholder="Note Content" required></textarea>
+        <button type="submit">Add Note</button>
+    </form>
+    <div id="notesList"></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
